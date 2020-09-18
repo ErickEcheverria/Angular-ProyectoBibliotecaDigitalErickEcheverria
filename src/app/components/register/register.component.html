@@ -1,1 +1,59 @@
-<p>register works!</p>
+<app-navbar-sesion></app-navbar-sesion>
+<!--Cuadro de ingreso-->
+<div class = "container">
+    <div class= "row justify-content-center pt-2 mt-2 mr-1">
+        <div class="col-md-4 formulario">
+            <form action="">
+                <div class="form-group text-center pt-3">
+                    <h1 class="text-light">Crear Usuario</h1>
+                </div>
+                <div class="form-group">
+                    <font>Carnet / CUI</font>
+                    <input type="text" class="form-control" placeholder="Ingrese Carnet o CUI del usuario">
+                </div>
+                <div class="form-group">
+                    <font>Nombre</font>
+                    <input type="text" class="form-control" placeholder="Ingrese nombre del Usuario">
+                </div>
+                <div class="form-group">
+                    <font>Apellido</font>
+                    <input type="text" class="form-control" placeholder="Ingrese apellido del Usuario">
+                </div>
+                <div class="form-group">
+                    <font>Rol</font>
+                    <input type="text" class="form-control" placeholder="Ingrese rol del Usuario">
+                </div>
+                <div class="form-group">
+                    <font>Password</font>
+                    <input type="text" class="form-control" placeholder="Ingrese contraseña del Usuario">
+                </div>
+                <div class="form-group  pt-2 mt-2 mr-1">
+                    <button type="button" class="btn btn-block ingresar" data-toggle="modal" data-target="#modalCancelar">
+                        CREAR
+                      </button>
+                      <div class="modal fade" id="modalCancelar" tabindex="-1" aria-labelledby="modalCancelarLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="modalCancelarLabel"><font color="black">Usuario creado con éxito</font></h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <font color="black">El usuario ha sido agregado a la base de datos exitosamente</font>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" [routerLink]="['/principalBiblioteca']">Finalizar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group  pt-2 mt-2 mr-1">
+                    <input type="submit" class="btn btn-block ingresar"  [routerLink]="['/principalBiblioteca']" value="CANCELAR">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" [routerLink]="['/principalBiblioteca']">
+        <img src="https://static.wixstatic.com/media/128120_082b0a9600da4e99a6462def860f2a6e~mv2.png/v1/fill/w_372,h_154,al_c,q_85,usm_0.66_1.00_0.01/Fundacion%20KinalBlanco.webp" width="150" height="55" class="d-inline-block align-top" alt="ImagenKinal" loading="lazy">
+        <font size=6>| Biblioteca Digital</font>
+      </a>
+    
+    <button type="button" class="btn btn-primary" [routerLink]="['/principalBiblioteca']">Usuarios</button>
+    <button type="button" class="btn btn-primary">Libros / Revistas</button>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+    <li class="nav-item">
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+          Cerrar Sesión
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ¿Seguro desea cerrar Sesión?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Regresar</button>
+              <button type="button" class="btn btn-primary" [routerLink]="['/inicio']" >Cerrar Sesión</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>

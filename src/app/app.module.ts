@@ -7,6 +7,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { PrincipalBibliotecaComponent } from './components/principal-biblioteca/principal-biblioteca.component';
+import { NavbarSesionComponent } from './components/navbar-sesion/navbar-sesion.component';
+import { ModificarComponent } from './components/modificar/modificar.component';
+import { EliminarComponent } from './components/eliminar/eliminar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { InicioComponent } from './components/inicio/inicio.component';
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
-    InicioComponent
+    InicioComponent,
+    PrincipalBibliotecaComponent,
+    NavbarSesionComponent,
+    ModificarComponent,
+    EliminarComponent
   ],
   imports: [
     BrowserModule,
