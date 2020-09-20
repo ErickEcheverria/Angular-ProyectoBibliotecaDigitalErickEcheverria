@@ -4,42 +4,42 @@
         <div class="col-md-4 formulario">
             <form action="">
                 <div class="form-group text-center pt-3">
-                    <h1 class="text-light">Eliminar Usuario</h1>
+                    <h1 class="text-light">Eliminar Libro||Revista</h1>
                 </div>
                 <fieldset disabled>
                     <div class="form-group">
                       <label for="disabledTextInput">ID</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="5f60bdc768f7a7248c244f64">
+                      <input type="text" id="disabledTextInput" class="form-control" value="34r4hui3jh5ui34hn3h4uih34	">
                     </div>
                 </fieldset>
                 <fieldset disabled>
                     <div class="form-group">
-                      <label for="disabledTextInput">Carnet / CUI</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="2015020">
+                      <label for="disabledTextInput">Titulo</label>
+                      <input type="text" id="disabledTextInput" class="form-control" value="Las aventuras de Rodolfo">
                     </div>
                 </fieldset>
                 <fieldset disabled>
                     <div class="form-group">
-                      <label for="disabledTextInput">Nombre</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="Alejandro">
+                      <label for="disabledTextInput">Autor</label>
+                      <input type="text" id="disabledTextInput" class="form-control" value="Franco Escamilla">
                     </div>
                 </fieldset>
                 <fieldset disabled>
                     <div class="form-group">
-                      <label for="disabledTextInput">Apellido</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="Méndez">
+                      <label for="disabledTextInput">Edicion</label>
+                      <input type="text" id="disabledTextInput" class="form-control" value="1">
                     </div>
                 </fieldset>
                 <fieldset disabled>
                     <div class="form-group">
-                      <label for="disabledTextInput">Rol</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="estudiante">
+                      <label for="disabledTextInput">Copias</label>
+                      <input type="text" id="disabledTextInput" class="form-control" value="5">
                     </div>
                 </fieldset>
                 <fieldset disabled>
                     <div class="form-group">
-                      <label for="disabledTextInput">Password</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="Guate826">
+                      <label for="disabledTextInput">Disponibles</label>
+                      <input type="text" id="disabledTextInput" class="form-control" value="4">
                     </div>
                 </fieldset>
                 <div class="form-group  pt-2 mt-2 mr-1">
@@ -50,25 +50,26 @@
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="modalCancelarLabel"><font color="black">Usuario eliminado con éxito</font></h5>
+                              <h5 class="modal-title" id="modalCancelarLabel"><font color="black">Libro/Revista eliminado con éxito</font></h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
                           </div>
                           <div class="modal-body">
-                            <font color="black">El usuario ha sido eliminado en la base de datos exitosamente</font>
+                            <font color="black">El libro/revista ha sido eliminado en la base de datos exitosamente</font>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal" [routerLink]="['/principalBiblioteca']">Finalizar</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" [routerLink]="['/principalLibrosRevistas']">Finalizar</button>
                           </div>
                         </div>
                       </div>
                     </div>
                 </div>
                 <div class="form-group  pt-2 mt-2 mr-1">
-                    <input type="submit" class="btn btn-block ingresar"  [routerLink]="['/principalBiblioteca']" value="CANCELAR">
+                    <input type="submit" class="btn btn-block ingresar"  [routerLink]="['/principalLibrosRevistas']" value="CANCELAR">
                 </div>
             </form>
         </div>
     </div>
 </div>
+

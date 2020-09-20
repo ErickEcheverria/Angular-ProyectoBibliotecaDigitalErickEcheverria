@@ -11,6 +11,10 @@ import { PrincipalBibliotecaComponent } from './components/principal-biblioteca/
 import { NavbarSesionComponent } from './components/navbar-sesion/navbar-sesion.component';
 import { ModificarComponent } from './components/modificar/modificar.component';
 import { EliminarComponent } from './components/eliminar/eliminar.component';
+import { PrincipalLibrosrevistasComponent } from './components/principal-librosrevistas/principal-librosrevistas.component';
+import { ModificarLibrorevistaComponent } from './components/modificar-librorevista/modificar-librorevista.component';
+import { EliminarLibrorevistaComponent } from './components/eliminar-librorevista/eliminar-librorevista.component';
+import { RegisterLibrorevistaComponent } from './components/register-librorevista/register-librorevista.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { EliminarComponent } from './components/eliminar/eliminar.component';
     PrincipalBibliotecaComponent,
     NavbarSesionComponent,
     ModificarComponent,
-    EliminarComponent
+    EliminarComponent,
+    PrincipalLibrosrevistasComponent,
+    ModificarLibrorevistaComponent,
+    EliminarLibrorevistaComponent,
+    RegisterLibrorevistaComponent,
   ],
   imports: [
     BrowserModule,

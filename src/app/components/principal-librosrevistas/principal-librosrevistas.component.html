@@ -1,0 +1,75 @@
+<app-navbar-sesion></app-navbar-sesion>
+<!--Combo Box -->
+<br>
+<font color="white" size="5"> ⚪ Filtrar por : </font>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        ComboBox
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" >Opcion 1</a>
+        <a class="dropdown-item" >Opcion 2</a>
+      </div>
+    </div>
+</div>
+<!-- Table -->
+<div class="container" align="center">
+  <div class="">
+  <table class="table table-striped custab">
+  <thead>
+  <a [routerLink]="['/registerLibroRevista']" class="btn btn-primary btn-xs pull-right"> Agregar Libro / Revista</a>
+      <tr>
+          <th>ID</th>
+          <th>Categoria</th>
+          <th>Titulo</th>
+          <th>Autor</th>
+          <th>Edicion</th>
+          <th>Copias</th>
+          <th>Disponibles</th>
+          <th class="text-center">CRUD</th>
+      </tr>
+  </thead>
+          <tr>
+              <td>34r4hui3jh5ui34hn3h4uih34</td>
+              <td>Libro</td>
+              <td>Las aventuras de Rodolfo</td>
+              <td>Franco Escamilla</td>
+              <td>No. 1</td>
+              <td>5</td>
+              <td>4</td>
+              <td class="text-center"><a class='btn btn-info btn-xs' [routerLink]="['/modificarLibroRevista']"><span class="glyphicon glyphicon-edit"></span> Editar </a> <a [routerLink]="['/eliminarLibroRevista']" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Borrar</a></td>
+          </tr>
+          <tr>
+            <td>5f60bdc768fge5te5genuih4</td>
+            <td>Revista</td>
+            <td>Times Guatemala</td>
+            <td>Pepe Company</td>
+            <td>No. 8</td>
+            <td>15</td>
+            <td>8</td>
+            <td class="text-center"><a class='btn btn-info btn-xs' [routerLink]="['/modificarLibroRevista']"><span class="glyphicon glyphicon-edit"></span> Editar </a> <a [routerLink]="['/eliminarLibroRevista']" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Borrar</a></td>
+        </tr>
+        <tr>
+            <td>5f60bdc768f7a7248c2786sd</td>
+            <td>Revista</td>
+            <td>Avon</td>
+            <td>Avon Products, Inc</td>
+            <td>No. 2020018</td>
+            <td>10</td>
+            <td>2</td>
+            <td class="text-center"><a class='btn btn-info btn-xs' [routerLink]="['/modificarLibroRevista']"><span class="glyphicon glyphicon-edit"></span> Editar </a> <a [routerLink]="['/eliminarLibroRevista']" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Borrar</a></td>
+        </tr>
+        <tr>
+            <td>5f60bdc768f7a7248c2hvvty6</td>
+            <td>Libro</td>
+            <td>Padre de Oro</td>
+            <td>Jorje Sazpa</td>
+            <td>No. 1</td>
+            <td>20</td>
+            <td>20</td>
+            <td class="text-center"><a class='btn btn-info btn-xs' [routerLink]="['/modificarLibroRevista']"><span class="glyphicon glyphicon-edit"></span> Editar </a> <a [routerLink]="['/eliminarLibroRevista']" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Borrar</a></td>
+        </tr>
+  </table>
+  </div>
+</div>
